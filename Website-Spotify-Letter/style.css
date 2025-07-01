@@ -1,0 +1,209 @@
+/* style.css */
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body & Background */
+body {
+  font-family: 'Trebuchet MS', sans-serif;
+  background-color: #FFF3E4; /* Pastel orange */
+  color: #4A2E1D; /* Soft brown text */
+  padding: 2rem;
+  text-align: center;
+}
+
+
+/* Container */
+.container {
+  max-width: 720px;
+  margin: auto;
+}
+
+/* Judul */
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 1.2rem;
+  color: #6e4b3a;
+  margin-bottom: 1.5rem;
+}
+
+.intro-gif {
+  width: 150px;
+  display: block;
+  margin: 1rem auto;
+}
+
+.description {
+  text-align: justify;
+  max-width: 700px;
+  margin: 1.5rem auto;
+  line-height: 1.6;
+  color: #4A2E1D;
+  font-size: 1rem;
+}
+
+.subtitle {
+  margin-bottom: 0.1rem;
+}
+
+/* Surat */
+.letter-title {
+  font-family: 'Trebuchet MS', sans-serif;
+}
+.letter-content {
+  font-family:'Comic Sans MS', cursive, sans-serif;;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  background-color: #ffffffcc; /* semi white bg */
+  padding: 1.5rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  margin-bottom: 2rem;
+  border: 2px dashed #FFA25B; /* Garis putus-putus warna oranye */
+  background-color: #ffffffcc; /* Semi transparan putih */
+  padding: 1.5rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  text-align: justify;
+}
+
+/* Tombol */
+.btn, .next-btn, .back-btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: #FFA25B; /* Medium orange */
+  color: #fff;
+  text-decoration: none;
+  border-radius: 32px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+  margin: 0.5rem;
+}
+
+.btn:hover, .next-btn:hover, .back-btn:hover {
+  background-color: #FF8C42; /* Darker orange */
+}
+
+/* Lyrics Box */
+.lyrics-box {
+  font-family: 'Trebuchet MS', sans-serif;
+  background-color: rgba(255, 255, 255, 0.75);
+  border: 2px dashed #FFA25B;
+  border-radius: 16px;
+  padding: 1.5rem;
+  width: 570px;
+  height: 430px;
+  line-height: 1.6;
+  color: #4A2E1D;
+  font-size: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  margin: 0; /* hilangkan auto-center */
+  display: flex;
+  justify-content: center; /* horizontal center */
+  align-items: center;  
+}
+
+.lyrics-inner {
+  text-align: center;
+}
+
+
+
+/* Spotify Iframe */
+.spotify-player iframe {
+  margin: 0;
+  width: 350px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+
+.text-box {
+  max-width: 700px;
+  margin: 2rem auto;
+  padding: 0 1.5rem;
+}
+
+.desc {
+  text-align: justify;
+  line-height: 1.7;
+  color: #4A2E1D; /* atau warna lain yang kamu pakai */
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+
+.song-artist {
+  font-family: 'DM Serif Display', serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #000000;  
+  margin-bottom: 1.5rem;
+}
+
+.song-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 0.4rem;
+  animation: pulse 2s ease-in-out 1.2s infinite;
+}
+
+.song-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem; /* lebih rapat */
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.song-page.container {
+  max-width: 1000px;
+}
+
+
+@media (max-width: 768px) {
+  .song-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .lyrics-box,
+  .spotify-player {
+    width: 100%;
+    max-width: 90%;
+  }
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.03); }
+  100% { transform: scale(1); }
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+  body {
+    padding: 1rem;
+  }
+
+  .letter-content {
+    font-size: 1rem;
+    padding: 1rem;
+  }
+
+  .btn, .next-btn, .back-btn {
+    width: 100%;
+  }
+}

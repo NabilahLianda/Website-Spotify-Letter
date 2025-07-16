@@ -27,7 +27,8 @@ Here are some important files included in this repository:
 
 ## 🛠️ Technologies Used
 
-- **Frontend:** HTML, CSS, JavaScript  
+- **Frontend:** HTML, CSS, JavaScript
+- **Backend:** Google Apps Script  
 - **Hosting:** Vercel  
 
 ## ▶️ How to Run
